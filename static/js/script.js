@@ -4,19 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       data = data.results[0];
       document.getElementById(
-        "user-name"
+        "nome"
       ).textContent = `${data.name.first} ${data.name.last}`;
-      document.querySelector("#user-gender ").innerHTML =
+      document.querySelector("#genere ").innerHTML =
         `Sesso:` + ` ` + `${data.gender}`;
-      document.getElementById("user-photo").src = data.picture.large;
+      document.getElementById("img").src = data.picture.large;
       document.getElementById(
-        "user-address"
+        "indirizzo"
       ).textContent = `Indirizzo: ${data.location.street.name} ${data.location.street.number}, ${data.location.city}, ${data.location.state}, ${data.location.country}`;
       document.getElementById(
-        "user-email"
+        "email"
       ).textContent = `Email: ${data.email}`;
       document.getElementById(
-        "user-other-info"
+        "info"
       ).textContent = `Telefono: ${data.phone}`;
     })
     .catch((error) => console.error("Errore:", error));
