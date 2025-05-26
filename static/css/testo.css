@@ -1,5 +1,16 @@
 .testo {
-    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 6px;
+    line-height: 1.4;
 }
 
+.testo strong {
+    margin-right: 5px;
+    font-weight: bold;
+}
 
+#nome{
+    color: brown;
+    font-weight: bold;
+}
